@@ -86,7 +86,7 @@ def _format_completion(d, include_params=True):
         'label': _label(d),
         'kind': _TYPE_MAP.get(d.type),
         'detail': _detail(d),
-        'documentation': _utils.format_docstring(d.docstring()),
+        #'documentation': _utils.format_docstring(d.docstring()),
         'sortText': _sort_text(d),
         'insertText': d.name
     }
