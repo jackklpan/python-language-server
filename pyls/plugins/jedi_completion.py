@@ -85,10 +85,10 @@ def _format_completion(d, include_params=True):
     completion = {
         'label': _label(d),
         'kind': _TYPE_MAP.get(d.type),
-        'detail': _detail(d),
+        #'detail': _detail(d),
         #'documentation': _utils.format_docstring(d.docstring()),
-        'sortText': _sort_text(d),
-        'insertText': d.name
+        #'sortText': _sort_text(d),
+        #'insertText': d.name
     }
 
     if include_params and hasattr(d, 'params') and d.params:
