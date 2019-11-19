@@ -83,7 +83,7 @@ def use_snippets(document, position):
 
 def _format_completion(d, include_params=True):
     completion = {
-        'label': _label(d),
+        'label': d.name,
         'kind': _TYPE_MAP.get(d.type),
         #'detail': _detail(d),
         #'documentation': _utils.format_docstring(d.docstring()),
